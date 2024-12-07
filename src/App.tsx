@@ -45,7 +45,7 @@ function App() {
           <h4 id="author">- {quote.author}</h4>
         </div>
         <div className ="buttons">
-          <a href="twitter.com/intent/tweet" target="_top" id="tweet-quote" style= {{backgroundColor: randomColor, marginRight: "5px", transition }}>
+          <a href={`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=${quote.quote}`} target="_top" id="tweet-quote" style= {{backgroundColor: randomColor, marginRight: "5px", transition }}>
             <FaTwitter color="white" />;
           </a>
           <button id="new-quote" onClick={newQuote} style={{backgroundColor: randomColor, transition }}>
